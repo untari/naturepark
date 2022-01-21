@@ -63,17 +63,30 @@ li a{
 
 /*zipline*/
 #experiences{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 #experiences h2{
     font-size: 50px;
 }
+#experiences h3{
+    font-size: 30px;
+}
 #experiences p{
     font-size: 20px;
 }
-.card-image{
-    width: 100%;
+.button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 .container{
     display: flex;
@@ -82,10 +95,50 @@ li a{
     flex-basis: 50%;
 }
 .zipline-text{
+    flex-basis: 30%;
     text-align: left;
-    margin-top: -25px;
-    margin-left: 50px;
+    margin-top: -1%;
 }
-.zipline-text h3{
-    font-size: 30px;
+/*Kayaking*/
+.kayaking-img{
+    margin-top: 6%;
+}
+.kayaking-text{
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+/*bungee jump*/
+.bungee-img{
+    margin-top: 6%;
+}
+.bungee-image{
+    width: 210%;
+}
+.bungee-text{
+    margin-top: 5%;
+    margin-left:30%;
+}
+/*canopy walking*/
+.canopy-img{
+    margin-top: 6%;
+}
+.canopy-image{
+    width: 200%;
+    margin-left: -95%;
+}
+.canopy-text{
+    margin-top: 5%;
+    margin-right: 20%;
+}
+/*rapel*/
+.rapel-img{
+    margin-top: 6%;
+}
+.rapel-image{
+    width: 240%;
+}
+.rapel-text{
+    margin-top: 5%;
+    margin-left: 30%;
 }
