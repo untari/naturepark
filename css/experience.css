@@ -54,9 +54,38 @@ li a{
 .main-text{
     text-align: center;
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 15%;
+    left: 16%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px white;
     font-size: 25px;
+}
+
+/*zipline*/
+#experiences{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#experiences h2{
+    font-size: 50px;
+}
+#experiences p{
+    font-size: 20px;
+}
+.card-image{
+    width: 100%;
+}
+.container{
+    display: flex;
+}
+.zipline-img{
+    flex-basis: 50%;
+}
+.zipline-text{
+    text-align: left;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+.zipline-text h3{
+    font-size: 30px;
 }
