@@ -165,3 +165,10 @@ li a{
   /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
 
+/*card images*/
+.weekend-img{
+    width: 60%;
+}
+.family-img{
+    width: 50%;
+}
