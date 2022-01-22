@@ -8,7 +8,7 @@ html, body{
 .logo{ 
     font-size: 30px;
     font-weight: bold;
-    padding-top: 10px;
+    padding: 18px 18px 0 18px;
 }
 
 /*nav*/
@@ -29,12 +29,11 @@ html, body{
 ul{
     list-style-type: none; 
     margin-top: 0px;
-    padding-top: 10px;
 }
 li a{
     float: right;
     display: inline;
-    padding: 8px;
+    padding: 20px;
     text-decoration: none; 
     color: black;
 }
@@ -221,20 +220,8 @@ p{
     gap: 6em;
     font-size: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin-left: 25%;
     margin-top: -4%;
-}
-.footer-links li:hover{
-    background-color: rgb(193, 209, 231);
-}
-ul{
-    list-style-type: none; 
-    padding: 0 60px 0 60px;
-}
-li a{
-    float: right;
-    display: inline;
-    text-decoration: none; 
-    color: black;
+    cursor: pointer;
 }
