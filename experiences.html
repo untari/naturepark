@@ -13,6 +13,7 @@
     <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -23,27 +24,23 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <!-- logo-->
-            <div class="logo">NatuPark</div>
-             <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <div class="nav-menu">
-                    <li class="active"><a href="/experiences.html">Fun &amp; Experiences</a></li>
-                    <li><a href="/">Booking</a></li>
-                    <li><a href="/">Getting Here</a></li>
-                    <li><a href="/">About Us</a></li>
-                </div>
+    <header class="menu">
+        <nav class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">NaturePark</label>
+            <ul>
+                <li class="active"><a href="/experiences.html">Fun &amp; Experiences</a></li>
+                <li><a href="/">Booking</a></li>
+                <li><a href="/">Getting Here</a></li>
+                <li><a href="/">About Us</a></li>
             </ul>
-            <!--<button>Menu</button>-->
-        </nav>
+          </nav>
     </header>
     <main>
         <div class="main-section">
-            <div class="main-text">
-                <h2>NatuPark Awesome Experiences</h2>
-            </div>
         </div>
         <!--section experiences-->
         <section class="sub-section" id="experiences">
@@ -117,92 +114,122 @@
                     all cabins have well equipped kitchen for those who like to cook.
                 </p>
             </div>
-            <div class="container" id="card-image">
-                <div class="row">
-                    <div class="column">
-                        <div class="card">
-                            <div class="daily-pass" >
-                                <h3>Daily Pass</h3>
-                                <img src="/images/daily-pass.jpg" alt="daily pass image"/>
-                                <p>
-                                    All rides and activites included
-                                </p>
-                                <p class="price">
-                                    $75/person
-                                </p>
-                                <button class="button" type="button">
-                                    Book now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card package" id="weekend-pass">
-                            <h3>Weekend Pass<br>(saturday/sunday)</h3>
-                            <img src="/images/weekend-pass.jpeg" class="weekend-img" alt="weekend pass image"/>
-                            <p>All rides and activites included</p>
-                            <p>Lunch and Dinner</p>
-                            <p class="price">
-                                $180/person
-                            </p>
-                            <button class="button" type="button">
-                                Book now
-                            </button>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card package" id="family-weekend">
-                            <h3>Family Weekend (friday-sunday)</h3>
-                            <img src="/images/family-weekends.jpeg" class="family-img" alt="family weekends image"/>
-                            <p>Stay at our cabins and enjoy all rides and activities</p>
-                            <p>Breakfast, Lunch and Dinner</p>
-                            <p class="price">
-                                $750 for a family of 4
-                            </p>
-                            <button class="button" type="button">
-                                Book now
-                            </button>
-                        </div>
-                    </div>
+            <div class="first pass">
+                <img class="book-profile-img" src="/images/daily-pass.jpg" alt="daily pass">
+                <div class="book-description-bk"><b>Daily Pass</b></div>
+                <div class="book-description">
+                  <p>All rides and activites included</p>
                 </div>
-            </div>
+                <div  class="book-price">
+                  <p>$75/person</p>
+                </div>
+                <div class="book-btn">
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="second pass">
+                <img class="book-profile-img" src="/images/weekend-pass.jpeg" alt="weekend pass">
+                <div class="book-description-bk"><b>Weekend Pass</b></div>
+                <div class="book-description">
+                    <p>All rides and activites included lunch and dinner </p>
+                    <p></p>                </div>
+                <div  class="book-price">
+                  <p>$180/person</p>
+                </div>
+                <div class="book-btn">
+                  <a href="#">Book Now</a>
+                </div>
+              </div>
+              <div class="third pass">
+                <img class="book-profile-img" src="/images/family-weekends.jpeg" alt="family weekend">
+                <div class="book-description-bk"><b>Family Weekend (friday-sunday)</b></div>
+                <div class="book-description">
+                    <p>Stay at our cabins and enjoy all rides and activities</p>
+                    <p>Breakfast, Lunch and Dinner</p>
+                </div>
+                <div  class="book-price">
+                  <p>$750 for a family of 4</p>
+                </div>
+                <div class="book-btn">
+                  <a href="#">Book Now</a>
+                </div>
         </section>
         <section class="image2">
             <!-- <img src="/" class="image2" alt="eye candy image"/> -->
         </section>
       
     </main>
-    <footer>
-        <div id="footer">
-            <h2>NatuPark</h2>
-            <nav class="footer-nav">
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="/"><b>Fun&Nature</b></a></li>
-                        <li><a href="/">ZipLine</a></li>
-                        <li><a href="/">Bungee Jump</a></li>
-                        <li><a href="/">Kyaking</a></li>
-                        <li><a href="/">Canopy walkways</a></li>
-                        <li><a href="/">Rapel/canyoning</a></li>
-                    </ul>
-                    <ul>
+    <footer class="footer">
+        <div class="footer__addr">
+          <h2 class="footer__logo">NaturePark</h2>
+
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h3 class="nav__title"><b>Fun&Nature</b></h3>
+            <ul class="nav__ul ">
+                <li><a href="/">ZipLine</a></li>
+                <li><a href="/">Bungee Jump</a></li>
+                <li><a href="/">Kyaking</a></li>
+                <li><a href="/">Canopy walkways</a></li>
+                <li><a href="/">Rapel/canyoning</a></li>
+            </ul>
+          
+          
+            <li class="nav__item nav__item--extra">
+                <h3 class="nav__title"><b>Costumer</b></h3>
+                
+                    <ul class="nav__ul nav__ul--extra">
                         <li><a href="/">Testimonials</a></li>
                         <li><a href="/">Photo Albums</a></li>
                         <li><a href="/">Community Videos</a></li>
                     </ul>
-                    <ul>
-                        <li><a href="/"><b>About NatuPark</b></a></li>
+                </li>
+
+                <li class="nav__item nav__item--extra">
+                    <h3 class="nav__title"><b>About NaturePark</b></h3>
+                    <ul class="nav__ul">
                         <li><a href="/">Our non-profit Cooperative</a></li>
                         <li><a href="/">Careers</a></li> 
                         <li><a href="/">News</a></li>
                         <li><a href="/">Getting Here</a></li>
                     </ul>
-                </div>
-
-            </nav>
+                </li>
+            </li>
+        </ul>
+      </footer>
+    <!-- <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <h2>NatuPark</h2>
+              <div class="topic"><b>Fun&Nature</b></div>
+                <ul>
+                    <li><a href="/">ZipLine</a></li>
+                    <li><a href="/">Bungee Jump</a></li>
+                    <li><a href="/">Kyaking</a></li>
+                    <li><a href="/">Canopy walkways</a></li>
+                    <li><a href="/">Rapel/canyoning</a></li>
+                </ul>
+            </div>
+            <div class="lower">
+              <div class="topic">Costumers</div>
+                <ul>
+                    <li><a href="/">Testimonials</a></li>
+                    <li><a href="/">Photo Albums</a></li>
+                    <li><a href="/">Community Videos</a></li>
+                </ul>
+            </div>
+            <br />
+            <div class="topic"><b>About NatuPark</b></div>
+            <ul>
+                <li><a href="/">Our non-profit Cooperative</a></li>
+                <li><a href="/">Careers</a></li> 
+                <li><a href="/">News</a></li>
+                <li><a href="/">Getting Here</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
-
+    </footer> -->
 </body>
 
 </html>
