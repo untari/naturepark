@@ -10,15 +10,19 @@ html, body{
     box-sizing: border-box;
 }
 header{
+    position: fixed;
     width: 100%;
+    z-index: 2;
 }
 nav{
     background: #0082e6;
     height: 80px;
-    width: 100%;
     position: relative;
+    width: 100%;
 }
-
+main{
+  position: relative;
+}
 label.logo{
     color: white;
     font-size: 35px;
@@ -59,30 +63,88 @@ a.active,a:hover{
 
 /*Main image*/
 .main-section{
-    background-image: url("../images/eye-candy.jpg")!important; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    height: 700px;
+  background-image: url("../images/eye-candy.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 700px;
 }
 
 /*zipline*/
 #experiences{
-    margin-top: 3%;
-    margin-left: 18%;
-    margin-right: 8%;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
- h2{
-    font-size: 50px;
+.responsive{
+  width: 100%;
+  height: auto;
+}
+h2{
+  font-size: 50px;
 }
 h3{
-    font-size: 30px;
+  font-size: 30px;
 }
 p{
-    font-size: 20px;
+  font-size: 20px;
 }
-
+.container{
+  display: flex;
+}
+.zipline-img{
+  margin-top: 3%;
+  width: 100%;
+}
+.zipline-text{
+  flex-basis: 40%;
+  text-align: left;
+  margin-top: 3%;
+  float: right;
+  margin-left: 1%;
+  width: auto;
+}
+/*Kayaking*/
+.kayaking-img{
+  margin-top: 6%;
+  width: 100%;
+  
+}
+.kayaking-text{
+  margin-right: 15%;
+  margin-top: 4%;
+  width: auto;
+}
+/*bungee jump*/
+.bungee-img{
+  margin-top: 6%;
+  width: 100%;
+}
+.bungee-text{
+  margin-top: 5%;
+  margin-left:1%;
+  width: auto;
+}
+/*canopy walking*/
+.canopy-img{
+  margin-top: 6%;
+  width:100%;
+}
+.canopy-text{
+  margin-top: 6%;
+  margin-right: 20%;
+}
+/*rapel*/
+.rapel-img{
+  margin-top: 6%;
+  width: 100%;
+}
+.rapel-text{
+  margin-top: 6%;
+  margin-left: 1%;
+  width: auto;
+}
 .button{
     background-color: #4CAF50;
     border: none;
@@ -95,60 +157,7 @@ p{
     margin: 4px 2px;
     cursor: pointer;
 }
-  
-/* .container{
-    display: flex;
-}
-.zipline-img{
-    flex-basis: 50%;
-}
-.zipline-text{
-    flex-basis: 40%;
-    text-align: left;
-    margin-top: -1%;
-} */
-/*Kayaking*/
-/* .kayaking-img{
-    margin-top: 6%;
-}
-.kayaking-text{
-    margin-right: 15%;
-    margin-top: 5%;
-}
-/*bungee jump*/
-/* .bungee-img{
-    margin-top: 6%;
-}
-.bungee-image{
-    width: 210%;
-}
-.bungee-text{
-    margin-top: 5%;
-    margin-left:30%;
-} */
-/*canopy walking*/
-/* .canopy-img{
-    margin-top: 6%;
-}
-.canopy-image{
-    width: 200%;
-    margin-left: -95%;
-}
-.canopy-text{
-    margin-top: 5%;
-    margin-right: 20%;
-} */
-/*rapel*/
-/* .rapel-img{
-    margin-top: 6%;
-}
-.rapel-image{
-    width: 240%;
-}
-.rapel-text{
-    margin-top: 5%;
-    margin-left: 30%;
-}  */
+
 /*book*/
 #book{
     margin-top: 5%;
@@ -175,71 +184,71 @@ p{
     margin: 30px;
     margin-left: 3%;
     
-  }
-  
-  .book-profile-img {
-    height: 70%;
-  }
-  
-  .book-description-bk {
-    background-image: linear-gradient(0deg , #3f5efb, #fc466b);
-    border-radius: 10px;
-    position: absolute;
-    top: 55%;
-    left: -5px;
-    height: 65%;
-    width: 108%;
-    transform: skew(19deg, -9deg);
-  }
-  
-  .second .book-description-bk {
-    background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
-  }
+}
 
-  .third .book-description-bk {
-    background-image: linear-gradient(-20deg , green, #e7d25c)
-  }
+.book-profile-img {
+  height: 70%;
+}
 
-  .book-description {
-    position: absolute;
-    color: #fff;
-    font-weight: 900;
-    left: 90px;
-    top: 60%;
-    bottom: 26%;
-  }
-  
-  .book-btn {
-    position: absolute;
-    color: #fff;
-    right: 30px;
-    bottom: 10%;
-    padding: 10px 20px;
-    border: 1px solid #fff;
-  }
-  
-  .book-btn a {
-    color: #fff;
-  }
-  
-  .book-price {
-    position: absolute;
-    color: #fff;
-    left: 30px;
-    bottom: 10%;
-  }
-  /* END CARD DESIGN */
-  .btn i:before {
-    width: 14px;
-    height: 14px;
-    position: fixed;
-    color: #fff;
-    background: #0077B5;
-    padding: 10px;
-    border-radius: 50%;
-    top:5px;
-    right:5px;
-  }
+.book-description-bk {
+  background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+  border-radius: 10px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.second .book-description-bk {
+  background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
+}
+
+.third .book-description-bk {
+  background-image: linear-gradient(-20deg , green, #e7d25c)
+}
+
+.book-description {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  left: 90px;
+  top: 60%;
+  bottom: 26%;
+}
+
+.book-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.book-btn a {
+  color: #fff;
+}
+
+.book-price {
+  position: absolute;
+  color: #fff;
+  left: 30px;
+  bottom: 10%;
+}
+/* END CARD DESIGN */
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top:5px;
+  right:5px;
+}
 
 /*eye candy 2*/
 .image2{   
@@ -260,6 +269,7 @@ p{
     color: white;
     background-color: #0082e6;
     border-top: 1px solid #e5e5e5;
+    position: relative;
 }
 
 .footer > * {
@@ -307,8 +317,70 @@ p{
 .nav__item{
     margin-left: 20%;
 }
+/*mobile device*/
+@media screen and (max-device-width: 480px) {
+
+}
   
 @media screen and (min-width: 40.375em) {
+    .zipline-text{
+      width: 50%;
+      margin-top: -27%;
+    }
+    .zipline-img{
+      margin-top: 3%;
+      width: 40%;
+    }
+    /*Kayaking*/
+    .kayaking-img{
+      margin-top: -10%;
+      margin-left: 50%;
+      width: 50%;
+    }
+    .kayaking-text{
+      margin-right: 15%;
+      margin-top: 5%;
+      width: 40%;
+    }
+    /*bungee jump*/
+    .bungee-img{
+      margin-top: 6%;
+      width: 50%;
+    }
+    .bungee-text{
+      margin-top: -34%;
+      margin-left: 60%;
+      width: auto;
+    }
+    /*canopy walking*/
+    .canopy-img{
+      margin-top: -9%;
+      margin-left: 50%;
+      width: 50%;
+    }
+    .canopy-text{
+      margin-top: 36%;
+      margin-right: 20%;
+      width: 40%;
+    }
+    /*rapel*/
+    .rapel-img{
+      margin-top: 6%;
+      width: 50%;
+    }
+    .rapel-text{
+      margin-top: -34%;
+      margin-left: 55%;
+      width: 40%;
+    }
+
+    #book{
+      margin-top: 25%;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }  
     .footer__nav > * {
       flex: 1;
     }
@@ -325,7 +397,7 @@ p{
       flex: 2 0px;
     }
 }
-/*mobile device*/
+
 @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -345,11 +417,11 @@ p{
     }
     nav ul{
       position: absolute;
-      width: 50%;
-      height: 45vh;
+      width: 100%;
+      height: 100vh;
       background: #97b8da;
       top: 80px;
-      left: -70%;
+      left: -100%;
       text-align: center;
       transition: all .5s;
     }
